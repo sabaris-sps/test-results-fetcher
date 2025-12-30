@@ -1,7 +1,7 @@
 ## Initial setup
 Download this python file to a folder.
 Run `pip install playwright`
-Then run `playwright install chromium`
+Then run `playwright install chromium` or `python -m playwright install chromium`
 
 ## Usage
 Just run the file `get_test_results.py`
