@@ -1,5 +1,6 @@
 from playwright.sync_api import sync_playwright
 import time
+import json
 
 # --- HARDCODED CONFIGURATION ---
 USERNAME = input("Enter your enrollment number:")
@@ -86,6 +87,9 @@ def fetch_results(test_details, context):
       print(f"Incorrect: {incorrect}")
       print(f"Total score: {total_score}")
       print(f"Rank: {rank}")
+      
+      with open("test.json", 'w') as file:
+        json.dump(data, file)
 
     except Exception:
       # Fallback to text if not JSON
