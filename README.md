@@ -7,3 +7,6 @@ Then run `playwright install chromium` or `python -m playwright install chromium
 Just run the file `get_test_results.py`
 It will ask for username, password, nth test index.
 nth test index follows python indexing (0 for first test. -1 for last test ...)
+
+## How to get questionwise results
+In the link that the program outputs, replace `get-score-overview` with `questionwise` and open browser networks tab to get the json
